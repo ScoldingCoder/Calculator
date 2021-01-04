@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    background-color: grey;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding: 10px;
+  }
+
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+  }
+
+
+  .screen{
+    grid-column: 1 / -1;
+    background-color: red;
+   
+  }
+
+
+  .keypad{
+    background-color: purple;
+    border: 1px solid gray;
+    
+  }
+  
