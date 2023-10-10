@@ -1,6 +1,9 @@
 .container {
+    display: flex;
+    margin: auto;
     display: grid;
     background-color: grey;
+    max-width: 500px;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,1fr);
     padding: 10px;
@@ -27,5 +30,17 @@
     background-color: purple;
     border: 1px solid gray;
     
+  }
+
+
+  input{
+
+  border: none;
+  outline: none;
+  direction:RTL;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  
+
   }
   
