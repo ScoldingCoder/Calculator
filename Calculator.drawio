@@ -1,0 +1,181 @@
+<mxfile host="app.diagrams.net" modified="2023-10-11T02:29:01.231Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="54beviTXTzu76xlzGd5Y" version="22.0.4" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2261" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="R19-LFNhhZJICQqr1dnN-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-0" target="R19-LFNhhZJICQqr1dnN-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-0" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-1" target="R19-LFNhhZJICQqr1dnN-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-1" value="&lt;div&gt;lastKeyPressed = &quot;&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;firstNum = &quot; &quot;&lt;br&gt;secondNum = &quot;&quot;&lt;br&gt;NB, firstNum and secondNum have spaces as 1st char to account for +/- sign &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;upperScreen =&quot;&quot;&lt;br&gt;lowerScreen = &quot;&quot;&lt;br&gt;result =&quot;&quot;&lt;/div&gt;&lt;div&gt;numHasDecimal = False&lt;/div&gt;&lt;div&gt;firstNumDone = False&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="140" y="160" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-2" target="R19-LFNhhZJICQqr1dnN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-2" value="User presses a key" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="430" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-3" target="R19-LFNhhZJICQqr1dnN-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="264" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="640" as="sourcePoint" />
+            <mxPoint x="400" y="265" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="635" />
+              <mxPoint x="570" y="635" />
+              <mxPoint x="570" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-3" value="Did the user press a number key and lenght of number input less than 10?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="540" width="220" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-9" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="570" y="410" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-19" target="R19-LFNhhZJICQqr1dnN-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-19" value="&lt;div&gt;Set last key Pressed to &quot;Num&quot; ,&lt;/div&gt;&lt;div&gt;Append value of Key to firstNum&lt;br&gt;Display firstNum on lowerScreen&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="801" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-21" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="260" y="740" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-25" target="R19-LFNhhZJICQqr1dnN-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-25" value="User presses a key" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="1010" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-27" target="R19-LFNhhZJICQqr1dnN-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="1235" />
+              <mxPoint x="100" y="876" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-27" target="R19-LFNhhZJICQqr1dnN-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-27" target="R19-LFNhhZJICQqr1dnN-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-27" value="Did the user press a number key and number of numerical chars in firstNum, less than 10?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="125" y="1124" width="291" height="223.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-30" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-31" value="Was a decimal key pressed and numHasDecimal is false and lenght of number input less than 10?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="1127.5" width="220" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-34" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="430" y="1210" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="1224.571428571429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-35" value="Append Period to the end of firstNum, set numHasDecimal to TRUE" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="810" y="1157.5" width="135" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.581;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-31" target="R19-LFNhhZJICQqr1dnN-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-38" target="R19-LFNhhZJICQqr1dnN-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-38" target="R19-LFNhhZJICQqr1dnN-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-38" target="R19-LFNhhZJICQqr1dnN-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="269.52941176470586" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-38" value="Was changeSign key pressed?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="175" y="1380" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-40" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="270" y="1340" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-42" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="740" y="1200" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.964;entryY=0.414;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-31" target="R19-LFNhhZJICQqr1dnN-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="1039" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-45" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="630" y="1060" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="336" y="1039" as="targetPoint" />
+            <mxPoint x="746" y="1479" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="996" y="1479" />
+              <mxPoint x="996" y="1039" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-46" value="if sign at the beginning of firstNum is negative, replace &#39; - &#39; with blank space&lt;br&gt;&lt;br&gt;if sign at the beginning of firstNum is empty space, replace&amp;nbsp; blank with &#39;-&#39; " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="550" y="1425" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-48" target="R19-LFNhhZJICQqr1dnN-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-48" value="Was Memory Cleared Pressed?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-163" y="1374" width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-50" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="100" y="1440" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-51" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="430" y="1440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-58" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="280" y="1610" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-59" target="R19-LFNhhZJICQqr1dnN-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-59" value="Was backspace pressed?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="175" y="1700" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.991;exitY=0.451;exitDx=0;exitDy=0;entryX=0.963;entryY=0.41;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="R19-LFNhhZJICQqr1dnN-60" target="R19-LFNhhZJICQqr1dnN-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="341.8600000000001" y="1038.59" as="targetPoint" />
+            <mxPoint x="760" y="1794" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="996" y="1794" />
+              <mxPoint x="996" y="1039" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R19-LFNhhZJICQqr1dnN-60" value="Remove last number entered in firstNum and display on lowerScreen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="555" y="1743" width="190" height="114" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
