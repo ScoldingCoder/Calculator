@@ -28,22 +28,13 @@ function backSpace(num){
 
    let toDelete = num .substr( num.length-1, 1)
 
- 
-
-
    if( toDelete == "."){
 
       numHasDecimal = false;
-
    }
-
-  
-   return num.substr(0, num.length-1);
-
+   return num.substr(0, num.length-1)
    
 }
-
-
 
 // we use the .forEach method to iterate through each button
 buttons.forEach((button) => {
@@ -66,7 +57,6 @@ operatorSelected =""
 
 upper.innerText = "";
 lower.innerText = "";
-
 
 
 }
@@ -108,6 +98,94 @@ else{
 }
   
  } 
+
+
+ //number key Pressed
+ if (button.classList.contains("number")){
+
+
+   if ((( lower.innerText.charAt(0) == "-" && lower.innerText.length < 11 ) || (lower.innerText.length <10)) && (firstNumDone == false )){
+
+      lastKeyPressed = "num";
+
+      lower.innerText = lower.innerText + button.innerText;
+
+      firstNum =lower.innerText;
+
+
+   }
+   
+
+   if ((( lower.innerText.charAt(0) == "-" && lower.innerText.length <11 ) || (lower.innerText.length <10)) && (firstNumDone == true )){
+
+      lastKeyPressed = "num";
+
+      lower.innerText = lower.innerText + button.innerText;
+
+      secondNum =lower.innerText;
+
+
+   }
+
+} 
+
+
+ //decimal key pressed
+ if (button.classList.contains("decimal")) {
+
+ if ((( lower.innerText.charAt(0) == "-" && lower.innerText.length < 10 ) || (lower.innerText.length <9)) && (lastKeyPressed == "num" )&& (numHasDecimal == false)){
+
+   lastKeyPressed = "decimal";
+
+   lower.innerText = lower.innerText + button.innerText;
+
+   numHasDecimal = true;
+
+ }
+ if(firstNumDone == false){
+   firstNum =lower.innerText;
+  
+}  
+
+else{
+   secondNum = lower.innerText;
+ 
+
+}
+
+ 
+
+ }
+
+//Change sign
+ if (button.classList.contains("changeSign")){
+
+ if(lower.innerText.charAt(0) == "-" ){
+
+   lower.innerText = lower.innerText.substr(1 ,lower.innerText.length -1 );
+
+  }
+
+  else{
+
+   lower.innerText = "-" +lower.innerText;
+ 
+  }
+  if(firstNumDone == false){
+   firstNum =lower.innerText;
+   
+  
+}  
+
+else{
+   secondNum = lower.innerText;
+   alert(secondNumNum);
+ 
+
+}
+
+ }
+
  
   });
 });
