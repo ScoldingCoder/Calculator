@@ -36,6 +36,60 @@ function backSpace(num){
    
 }
 
+
+function runOperation(){
+
+   switch (operatorSelected){
+
+      case '+':
+
+      result = Number(firstNum) + Number(secondNum);
+
+      break;
+
+
+      case '-':
+
+      result = Number(firstNum) - Number(secondNum);
+
+      break;
+
+      case 'x':
+
+      result = Number(firstNum) * Number(secondNum);
+
+      break;
+
+      case '÷':
+
+      if(secondNum == "0"){
+
+      alert("This text stays here until I add an image to the alert");
+      lastKeyPressed = "";
+      firstNum = "";
+      secondNum = "";
+      result ="";
+      numHasDecimal = false;
+      firstNumDone = false;
+      operatorSelected ="";
+      lower.innerText ="";
+      upper.innerText ="";
+      
+      }
+
+
+
+
+
+   }
+
+   
+
+
+
+
+}
+
 // we use the .forEach method to iterate through each button
 buttons.forEach((button) => {
 
@@ -179,13 +233,76 @@ else{
 
 else{
    secondNum = lower.innerText;
-   alert(secondNumNum);
+   
  
 
 }
 
  }
 
+
+ //operator key
+ if (button.classList.contains("operator")){
+
+   if(!isNaN (lower.innerText.charAt(lower.innerText.length-1))){
+
+      lastKeyPressed = "operator"
+      numHasDecimal = false;
+
+
+      if(firstNumDone == true){
+
+         runOperation();
+
+         if(operatorSelected != ""){
+
+         operatorSelected = button.innerText;
+
+         }
+
+
+         if(result.toString().length > 9){
+
+         result = result.toExponential(5);
+
+         }
+         
+
+         upper.innerText =result + " " + operatorSelected;
+
+         firstNum = result;
+         lower.innerText = "";
+
+      }
+
+
+      else if (firstNumDone == false){
+
+         operatorSelected = button.innerText;
+
+         upper.innerText = lower.innerText + " " + operatorSelected;
+
+         firstNum = lower.innerText;
+
+         firstNumDone = true;
+
+         lower.innerText = "";
+
+      }
+
+
+     
+
+
+   }
+
+
+
+   
+
+   
+  
+   }
  
   });
 });
