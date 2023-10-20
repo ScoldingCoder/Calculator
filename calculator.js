@@ -77,8 +77,9 @@ function runOperation(){
       
       }
 
+      else{ result = Number(firstNum) / Number(secondNum)}
 
-
+      
 
 
    }
@@ -117,7 +118,12 @@ lower.innerText = "";
 
 
 //Clear Screen
-if (button.classList.contains("clearScreen")){
+ (button.classList.contains("clearScreen") || button.id =="Hello") 
+
+{
+
+   alert("I was triggered by the Keyboard!");
+
    lower.innerText = "";
 
 //clears firstNum if user was entering the first number
@@ -156,6 +162,16 @@ else{
 
  //number key Pressed
  if (button.classList.contains("number")){
+
+   if(lastKeyPressed =="equal") {
+
+      firstNumDone = false;
+      result = "";
+      upper.innerText ="";
+      numHasDecimal = false;
+
+   }
+
 
 
    if ((( lower.innerText.charAt(0) == "-" && lower.innerText.length < 11 ) || (lower.innerText.length <10)) && (firstNumDone == false )){
@@ -244,6 +260,12 @@ else{
  //operator key
  if (button.classList.contains("operator")){
 
+   if (lastKeyPressed == "equal"){
+
+      firstNum = result;
+
+   }
+
    if(!isNaN (lower.innerText.charAt(lower.innerText.length-1))){
 
       lastKeyPressed = "operator"
@@ -290,19 +312,47 @@ else{
 
       }
 
-
-     
+   }
 
 
    }
 
+//Equal key
+ if (button.classList.contains("equal")){
 
 
-   
+   //!isNaN is an alternative method to checking lastKeyPressed
+   if( firstNumDone = true & !isNaN (lower.innerText.charAt(lower.innerText.length-1))){
 
-   
-  
+      lastKeyPressed = "equal"
+
+      runOperation()
+
+      upper.innerText = result;
+      lower.innerText = "";
+      secondNum ="";
+
    }
  
+  
+}
+ 
   });
+});
+
+
+//adding keyboard support -link the keys pressed to buttons
+
+addEventListener("keypress", (event) => {
+
+event.preventDefault();
+
+
+document.getElementById("Hello").click();
+
+
+
+//for next session, check if event is a number, if it is, get the element by the ID value of event  -That way, i wont have to code the click event for each number
+
+   
 });
