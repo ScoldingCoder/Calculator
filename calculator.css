@@ -1,13 +1,19 @@
 .container {
    
     margin: auto;
-    margin-top:25px;
+    margin-top:50px;
     display: grid;
-    background-color: grey;
+    background-color:rgba(67,68,88);
     max-width: 550px;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,1fr);
-    padding: 15px;
+    padding: 30px;
+    border-radius:5%;
+  }
+
+  body{
+
+    background-color:rgba(225,211,182);
   }
 
 
@@ -18,18 +24,22 @@
     margin: 8px;
     font-size: 30px;
     border: 1px solid black;
-    background-color: purple;
+    background-color: rgba(190,187,193);
+    border-radius: 5%
   }
 
 
   .screen{
     
     grid-column: 1 / -1;
-    background-color: red;
+    background-color: rgb(210,224,206);
     text-align:right;
     font-size: 5em;
- 
-   
+    font-family: 'Seven Segment', sans-serif;
+    margin-left:8px;
+    margin-right:8px;
+    
+                                              
   }
 
 
@@ -42,18 +52,124 @@
   
   }
 
+  .lower{
+
+    margin-bottom: 8px;
+    border-bottom-left-radius: 0.512cap;
+    border-bottom-right-radius: 0.512cap;
+
+  }
+
+  .upper{
+    border-top-left-radius: 0.512cap;
+    border-top-right-radius: 0.512cap;
+
+  }
+
+  .number:hover, .changeSign:hover, .decimal:hover {
+
+    box-shadow: 5px 5px 5px rgba(84,103,145);
+    background-image: linear-gradient(rgba(84,103,145),#f8f9fa);
+    border: 1px solid rgba(84,103,145);
+    
+      
+  }
 
 
+  button.memoryClear:hover{
 
-/*
-  input{
+   box-shadow: 5px 5px 5px rgba(190,137,133);
+   background-image: linear-gradient(rgba(190,137,133),#f8f9fa);
+   border: 1px solid rgba(190,137,133);
+        
+          
+  }  
 
-  border: none;
-  outline: none;
-  direction:RTL;
-  color: transparent;
-  text-shadow: 0 0 0 black;
+  button.operator:hover{
+
+    box-shadow: 5px 5px 5px rgba(150,139,181);
+    background-image: linear-gradient(rgba(150,139,181),#f8f9fa);
+    border: 1px solid rgba(150,139,181);
+         
+           
+   }  
+
+
+  button.equal:hover{
+
+    box-shadow: 5px 5px 5px rgba(84,221,203);
+    background-image: linear-gradient(rgba(84,221,203),#f8f9fa);
+    border: 1px solid rgba(84,221,203);
+               
+   }  
+
+
+   button.clearScreen:hover{
+
+    box-shadow: 5px 5px 5px rgba(255,202,0);
+    background-image: linear-gradient(rgba(255,202,0),#f8f9fa);
+    border: 1px solid rgba(255,202,0);
+               
+   }  
+
+   button.back:hover{
+
+    box-shadow: 5px 5px 5px rgba(131,199,76);
+    background-image: linear-gradient(rgba(131,199,76),#f8f9fa);
+    border: 1px solid rgba(131,199,76);
+               
+   }  
+
+
+   /*Click*/
+
+
+   .number:active, .changeSign:active, .decimal:active {
+
+    box-shadow:none;
+    background-image: linear-gradient(rgba(84,103,145),#f8f9fa);
+      
+  }
+
+
+  button.memoryClear:active{
+   
+   box-shadow:none;
+   background-image: linear-gradient(rgba(190,137,133),#f8f9fa);
   
+          
+  }  
 
-  } */
+  button.operator:active{
+
+    box-shadow:none;
+    background-image: linear-gradient(rgba(150,139,181),#f8f9fa);     
+           
+   }  
+
+
+  button.equal:active{
+
+    box-shadow:none;
+    background-image: linear-gradient(rgba(84,221,203),#f8f9fa);
+            
+   }  
+
+
+   button.clearScreen:active{
+
+
+    box-shadow:none;
+    background-image: linear-gradient(rgba(255,202,0),#f8f9fa);
+    
+               
+   }  
+
+   button.back:active{
+
+    box-shadow:none;
+    background-image: linear-gradient(rgba(131,199,76),#f8f9fa);
+               
+   }  
+
   

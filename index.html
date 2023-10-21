@@ -4,34 +4,38 @@
   <meta charset="UTF-8"/>
   <script src="calculator.js" defer></script>
   <link rel="stylesheet" href="calculator.css" media="all">
+  <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
   <link rel="shortcut icon" href="#" />
 </head>
 
 <body>
 <div class = "container">
+  
 <div class = "screen  upper"> </div> 
 <div class = "screen  lower"> </div> 
 
-<button class = "grid-item memoryClear"> MC</button> 
-<button class = "grid-item clearScreen" id = "Hello">C </button> 
-<button class = "grid-item backspace " > CE</button> 
-<button class = "grid-item operator">÷ </button> 
-<button class = "grid-item number "> 7</button> 
-<button class = "grid-item number "> 8</button> 
-<button class = "grid-item number"> 9</button> 
-<button class = "grid-item operator "> x</button> 
-<button class = "grid-item number"> 4</button> 
-<button class = "grid-item number "> 5</button> 
-<button class = "grid-item number "> 6</button> 
-<button class = "grid-item operator">-</button> 
-<button class = "grid-item number">1</button> 
-<button class = "grid-item number">2</button> 
-<button class = "grid-item number">3</button> 
-<button class = "grid-item operator">+</button> 
-<button class = "grid-item changeSign"> +/-</button> 
-<button class = "grid-item number"> 0</button> 
-<button class = "grid-item decimal">.</button> 
-<button class = "grid-item equal">= </button> 
+<!--The IDs of the button are the same as key event for keyboard support -->
+
+<button class = "grid-item memoryClear" id = "Delete"> MC</button> 
+<button class = "grid-item clearScreen" id = "Tab">C </button> 
+<button class = "grid-item  back "id = "Backspace" > CE</button> 
+<button class = "grid-item operator" id = "/">÷ </button> 
+<button class = "grid-item number " id = "7"> 7</button> 
+<button class = "grid-item number " id = "8"> 8</button> 
+<button class = "grid-item number" id = "9"> 9</button> 
+<button class = "grid-item operator " id = "*"> x</button> 
+<button class = "grid-item number" id = "4"> 4</button> 
+<button class = "grid-item number " id = "5"> 5</button> 
+<button class = "grid-item number " id = "6"> 6</button> 
+<button class = "grid-item operator" id = "-">-</button> 
+<button class = "grid-item number " id = "1">1</button> 
+<button class = "grid-item number" id = "2">2</button> 
+<button class = "grid-item number" id = "3">3</button> 
+<button class = "grid-item operator" id = "+">+</button> 
+<button class = "grid-item changeSign" id = "`"> +/-</button> 
+<button class = "grid-item number" id = "0"> 0</button> 
+<button class = "grid-item decimal" id = ".">.</button> 
+<button class = "grid-item equal" id = "=">= </button> 
 
 
 
@@ -40,7 +44,8 @@
 
 
 <footer> To change sign of a number using the keyboard, press `</footer>
-<footer> To clear the memory using the keyboard, press  'delete'</footer>
+<footer> To clear the memory using the keyboard, press  'Delete'</footer>
+<footer> To clear the lower screen using the keyboard, press 'Tab'</footer>
 
 </body>
 
