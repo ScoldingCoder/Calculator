@@ -29,6 +29,15 @@ function backSpace(num) {
 }
 
 function runOperation() {
+
+  if (firstNum== NaN || secondNum ==NaN ){
+
+    console.log(ERROR)
+
+
+  }
+
+  else 
   switch (operatorSelected) {
 
     case '+':
@@ -45,7 +54,7 @@ function runOperation() {
 
     case '÷':
       if (secondNum == "0"||secondNum =="-0") {
-        alert("DIVIDED BY ZERO\n Congratulation! your math just destroyed a city");
+        alert("DIVIDED BY ZERO\n Congratulation! Your math just destroyed a city");
         lastKeyPressed = "";
         firstNum = "";
         secondNum = "";
@@ -59,7 +68,7 @@ function runOperation() {
       } else {
         result = Number(firstNum) / Number(secondNum)
       }
-  }
+  } 
 }
 
 // we use the .forEach method to iterate through each button
@@ -67,6 +76,10 @@ buttons.forEach((button) => {
 
   // and for each one we add a 'click' listener
   button.addEventListener('click', () => {
+
+        
+        
+         
     // Memory Clear is always active
     if (button.classList.contains("memoryClear")) {
       //reset all parameter and clear both screens
@@ -170,15 +183,21 @@ buttons.forEach((button) => {
 
     //operator key
     if (button.classList.contains("operator")) {
+
       if (lastKeyPressed == "equal") {
         firstNum = result;
+        operatorSelected = button.innerText
+        upper.innerText = result + " " + operatorSelected;
+       
       }
 
       if (!isNaN(lower.innerText.charAt(lower.innerText.length - 1))) {
+       
         lastKeyPressed = "operator"
         numHasDecimal = false;
 
-        if (firstNumDone == true) {
+        if (firstNumDone == true && secondNum !="") {
+
           runOperation();
           if (operatorSelected != "") {
             operatorSelected = button.innerText;
@@ -201,22 +220,28 @@ buttons.forEach((button) => {
           lower.innerText = "";
         }
 
+        
+
       }
     }
 
     //Equal key
     if (button.classList.contains("equal")) {
       //!isNaN is an alternative method to checking lastKeyPressed
-      if (firstNumDone = true & !isNaN(lower.innerText.charAt(lower.innerText.length - 1))) {
+      if (firstNumDone = true && !isNaN(lower.innerText.charAt(lower.innerText.length - 1))) {
         lastKeyPressed = "equal"
         runOperation()
+        if (result.toString().length > 9) {
+          result = result.toExponential(5);
+        }
         upper.innerText = result;
         lower.innerText = "";
         secondNum = "";
+    
       }
 
     }
-
+     
   });
 });
 
@@ -224,8 +249,7 @@ buttons.forEach((button) => {
 //adding keyboard support -link the keys pressed to buttons
 
 addEventListener("keydown", (event) => {
-      ;
-
+    
 //check if the events which the key pressed and the button id is the same
    for (const value of document.querySelectorAll('[id]').values()) {
       if (event.key == value.id){
@@ -240,6 +264,8 @@ addEventListener("keydown", (event) => {
 // add key event for pressing Enter key which functions like the equal key
 
 if(event.key == 'Enter'){
+
+   event.preventDefault(); 
    document.getElementById('=').click();
 
 
